@@ -1,0 +1,142 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  text-align: center;
+  font-size: 62.5%;
+  font-family: 'Cinzel';
+  font-weight: 400;
+  background-color: #aea79f; /* IU Limestone */
+}
+#iuImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75px;
+  height: 75px;
+}
+#content {
+  position: relative;
+  max-width: 960px;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #e1d8b7; /* IU Cream */
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  -webkit-box-shadow: 1em 0 2em #000,
+  -1em 0 3em #000;
+  -moz-box-shadow: 1em 0 2em #000,
+  -1em 0 3em #000;
+  box-shadow: 1em 0 2em #000,
+  -1em 0 3em #000;
+}
+main {
+  max-width: 601px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.shadow {
+  text-shadow: -3px 3px 3px #aea79f;
+}
+.title {
+  font-family: 'Cinzel', serif;
+  font-weight: 400; 
+}
+h1 {
+  margin: 0 auto;
+  padding-top: 75px;
+  font-size: 7em;
+  text-decoration: underline;
+}
+h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+div.location {
+  margin: 0 auto;
+  position: relative;
+}
+div.addressWrapper {
+  display: inline-block;
+  width: 49%;
+  margin: 65px auto;
+  vertical-align: top;
+}
+
+.address li {
+  font-size: 2em;
+  padding: .25em;
+}
+iframe {
+  display: inline;
+  max-width: 50%;
+  min-width: 300px;
+  margin: 0 auto;
+  border: 1px solid #7d110c; /* IU Crimson */
+}
+.clear {
+  clear: both;
+}
+.contact {
+  margin: 3em auto 0;
+  
+}
+.contact li {
+  padding: 1em .5em;
+  display: inline-block;
+  font-size: 2em;
+}
+.contact li+li {
+  border-left: 1px solid #7d110c;
+}
+.contact li a:link {
+  color: #7d110c;
+}
+
+.contact li a {
+  text-decoration: none;
+  padding: .5em;
+  border-radius: 4px;
+}
+.contact span:after {
+  content: attr(data-pc);
+}
+@media screen and (max-width: 600px) { 
+  .contact span:after { content: attr(data-mobile); }
+
+  div.addressWrapper { margin: 0 auto 3em; display: block;}
+  
+  ul.contact li a {border: 3px solid #44697D; background-color: #C59217;} 
+}
+@media screen and (min-width: 266px) and (max-width: 386px) {
+  .contact li:last-child {
+    border: none;
+  }
+}
+@media screen and (max-width: 265px) {
+  .contact li:nth-child(2) {
+    border: none;
+  }
+}
+div#quote p { 
+  font-size: 2em;
+  margin: 2em auto 0;
+}
+div#quote p span {
+  float: right;
+  font-size: .8em;
+}
+div#quote p q {
+  font-size: 1em;
+  font-style: italic;
+}
